@@ -22,3 +22,20 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+
+auth.json
+npm-debug.log
+yarn-error.log
+.vite.config.js
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+playwright.config.ts
+/e2e
+screenshots/
