@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zia Dev</title>
 
-    <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/png">
+    <link rel="icon" href="{{ asset('favicon.ico') }}?v=3" type="image/x-icon">
     <!--
       - Custom css and js from vite
     -->
