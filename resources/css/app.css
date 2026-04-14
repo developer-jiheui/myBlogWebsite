@@ -1,11 +1,25 @@
-@import 'tailwindcss';
+@import './base/tailwind.css';
+@import './base/tokens.css';
+@import './base/reset.css';
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+@import './components/shared.css';
+@import './components/cards.css';
+@import './components/modal.css';
+@import './components/forms.css';
+@import './components/scrollbar.css';
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
+@import './layout/main.css';
+@import './layout/sidebar.css';
+@import './layout/navbar.css';
+
+@import './pages/home.css';
+@import './pages/resume.css';
+@import './pages/portfolio.css';
+@import './pages/blog.css';
+@import './pages/contact.css';
+
+@import './responsive/450.css';
+@import './responsive/580.css';
+@import './responsive/768.css';
+@import './responsive/1024.css';
+@import './responsive/1250.css';
