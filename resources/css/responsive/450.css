@@ -1,0 +1,10 @@
+@media (min-width: 450px) {
+    .clients-item {
+        min-width: calc(33.33% - 10px);
+    }
+
+    .project-img,
+    .blog-banner-box {
+        height: auto;
+    }
+}
