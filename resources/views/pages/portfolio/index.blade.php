@@ -4,7 +4,11 @@
         <header>
             <h2 class="h2 article-title">Portfolio</h2>
         </header>
-
+        <section class="search-bar">
+                <div class="search-box">
+                    <div class="search-text">search</div>
+                </div>
+        </section>
         <section class="projects">
             <ul class="filter-list">
                 <li class="filter-item">
@@ -47,14 +51,14 @@
 
             <ul class="project-list">
                 <li class="project-item active" data-filter-item data-category="web development">
-                    <a href="#">
+                    <a href="{{route('portfolio.club')}}">
                         <figure class="project-img">
                             <div class="project-item-icon-box">
                                 <ion-icon name="eye-outline"></ion-icon>
                             </div>
                             <img src="{{ asset('images/projects/prj01.png') }}" alt="pr1" loading="lazy">
                         </figure>
-                        <h3 class="project-title">Finance</h3>
+                        <h3 class="project-title">Club Website</h3>
                         <p class="project-category">Web development</p>
                     </a>
                 </li>
