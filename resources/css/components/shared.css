@@ -43,18 +43,14 @@ article {
     --ionicon-stroke-width: 35px;
 }
 
-article {
-    display: none;
-}
-
-article.active {
-    display: block;
-    animation: fade 0.5s ease backwards;
-}
 
 @keyframes fade {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .h2,
@@ -65,9 +61,17 @@ article.active {
     text-transform: capitalize;
 }
 
-.h2 { font-size: var(--fs-1); }
-.h3 { font-size: var(--fs-2); }
-.h4 { font-size: var(--fs-4); }
+.h2 {
+    font-size: var(--fs-1);
+}
+
+.h3 {
+    font-size: var(--fs-2);
+}
+
+.h4 {
+    font-size: var(--fs-4);
+}
 
 .h5 {
     font-size: var(--fs-7);

@@ -1,23 +1,28 @@
 <nav class="navbar">
-
     <ul class="navbar-list">
-
         <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>Home</button>
+            <a href="{{ route('home') }}" class="navbar-link {{ request()->routeIs('home') ? 'active' : '' }}">
+                Home
+            </a>
         </li>
 
         <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <a href="{{ route('portfolio.index') }}"
+               class="navbar-link {{ request()->routeIs('portfolio.*') ? 'active' : '' }}">
+                Portfolio
+            </a>
         </li>
 
         <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <a href="{{ route('blog.index') }}" class="navbar-link {{ request()->routeIs('blog.*') ? 'active' : '' }}">
+                Blog
+            </a>
         </li>
 
         <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <a href="{{ route('contact') }}" class="navbar-link {{ request()->routeIs('contact') ? 'active' : '' }}">
+                Contact
+            </a>
         </li>
-
     </ul>
-
 </nav>
