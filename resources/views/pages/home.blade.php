@@ -19,42 +19,49 @@
 </head>
 
 <body>
-<header style="z-index:9999" class="header w-full bg-black shadow dark:bg-black fixed top-0 ">
-    <nav>
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div class="relative flex h-16 justify-between">
-                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                    <button
-                        class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 transition duration-150 ease-in-out hover:bg-gray-100 hover:text-gray-500 focus:bg-gray-100 focus:text-gray-500 focus:outline-none dark:hover:bg-gray-600 dark:hover:text-gray-400 dark:focus:bg-gray-600 dark:focus:text-gray-400">
-                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M4 6h16M4 12h16M4 18h16"></path>
-                            <path class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M6 18L18 6M6 6l12 12"></path>
+
+<div class="header w-full top-0 fixed bg-black">
+    <div class="header-box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full">
+        <div class="top-nav relative flex h-16 justify-between gap-5 items-center">
+            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex flex-shrink-0 items-center">
+                    <a href="/">
+                        <div class="flex m-2">
+                        <svg class="zia-logo block h-8 w-auto " viewBox="0 0 1000 1000"
+                             xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+                            <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"
+                                  fill="white"/>
+                            <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                            <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                            <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"
+                                  stroke-linecap="square"/>
+                            <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>
                         </svg>
-                    </button>
+                            <div class="text-3xl text-white font-extrabold bottom-0">ZIA LEE</div>
+                        </div>
+                    </a>
                 </div>
-                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="flex flex-shrink-0 items-center"><a href="/"><img class="block h-8 w-auto lg:hidden"
-                                                                                  src="/m.svg" alt=""><img
-                                class="hidden h-8 w-auto lg:block" src="/m.svg" alt=""></a></div>
-                    <div class="hidden sm:ml-6 sm:flex"><a
-                            class="false inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
-                            href="/courses">Courses</a><a
-                            class="ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
-                            href="/challenges">Challenges</a><a
-                            class="ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
-                            href="/reviews">Reviews 🔥</a><a
-                            class="ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
-                            href="/community">Community</a><a
-                            class="ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
-                            href="/faq">FAQ</a><a
-                            class="ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
-                            href="/roadmap">Roadmap</a><a
-                            class="ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
-                            href="/supaplate">Boilerplates</a></div>
+            </div>
+
+            <div class="nav-center flex-1">
+                <div class="flex gap-3 text-xs sm:text-sm">
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/portfolio">Portfolio</a>
+
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                        href="/blog">
+                        Blog</a>
+                    <a class="nav-item
+                            ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                       href="/contact">Contact</a>
                 </div>
-                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            </div>
+            <div class="nav-right flex-none absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
                     <div class="relative ml-3 flex items-center"><a
                             class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"
                             href="/login">Login</a>
@@ -62,129 +69,78 @@
                                 class="relative inline-flex items-center rounded-md border border-transparent bg-blue-600 px-8 py-2 text-sm font-medium leading-5 text-white shadow-sm transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none focus:ring focus:ring-blue-400 active:bg-blue-700 dark:border dark:border-white dark:bg-white dark:text-gray-700 dark:hover:bg-transparent dark:hover:text-white"
                                 href="/join"><span>Join</span></a></div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="hidden sm:hidden">
-            <div class="pb-4 pt-2"><a
-                    class="mt-5 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 transition duration-150 ease-in-out hover:border-gray-300 hover:bg-gray-300 hover:text-gray-800 focus:border-gray-300 focus:bg-gray-50 focus:text-gray-800 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-gray-200"
-                    href="/login">Login</a><a
-                    class="mt-5 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 transition duration-150 ease-in-out hover:border-gray-300 hover:bg-gray-300 hover:text-gray-800 focus:border-gray-300 focus:bg-gray-50 focus:text-gray-800 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-gray-200"
-                    href="/courses">Courses</a><a
-                    class="mt-5 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 transition duration-150 ease-in-out hover:border-gray-300 hover:bg-gray-300 hover:text-gray-800 focus:border-gray-300 focus:bg-gray-50 focus:text-gray-800 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-gray-200"
-                    href="/challenges">Challenges</a><a
-                    class="mt-5 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 transition duration-150 ease-in-out hover:border-gray-300 hover:bg-gray-300 hover:text-gray-800 focus:border-gray-300 focus:bg-gray-50 focus:text-gray-800 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-gray-200"
-                    href="/reviews">Reviews 🔥</a><a
-                    class="mt-5 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 transition duration-150 ease-in-out hover:border-gray-300 hover:bg-gray-300 hover:text-gray-800 focus:border-gray-300 focus:bg-gray-50 focus:text-gray-800 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-gray-200"
-                    href="/community">Community</a><a
-                    class="mt-5 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 transition duration-150 ease-in-out hover:border-gray-300 hover:bg-gray-300 hover:text-gray-800 focus:border-gray-300 focus:bg-gray-50 focus:text-gray-800 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-gray-200"
-                    href="/faq">FAQ</a><a
-                    class="mt-5 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 transition duration-150 ease-in-out hover:border-gray-300 hover:bg-gray-300 hover:text-gray-800 focus:border-gray-300 focus:bg-gray-50 focus:text-gray-800 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-gray-200"
-                    href="/roadmap">Roadmap</a><a
-                    class="mt-5 block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 transition duration-150 ease-in-out hover:border-gray-300 hover:bg-gray-300 hover:text-gray-800 focus:border-gray-300 focus:bg-gray-50 focus:text-gray-800 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-gray-200"
-                    href="/supaplate">Boilerplates</a></div>
-        </div>
-    </nav>
-    <nav>
-        <div class="home-link mx-auto max-w-7xl px-2 sm:px-6 lg:px-8  flex items-center justify-center">
-            <div class="logo flex items-center justify-center">
 
-                <svg class="zia-logo" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
-
-                    <g fill="none" stroke="currentColor" stroke-width="34" stroke-linecap="square"
-                       stroke-linejoin="miter">
-
-                        <!-- top diamond -->
-
-                        <polygon points="500,110 555,165 500,220 445,165" fill="currentColor" stroke="none"/>
-
-                        <!-- top horizontal -->
-
-                        <line x1="280" y1="300" x2="720" y2="300"/>
-
-                        <!-- center vertical -->
-
-                        <line x1="500" y1="300" x2="500" y2="790"/>
-
-                        <!-- upper right diagonal -->
-
-                        <line x1="500" y1="300" x2="700" y2="300"/>
-
-                        <line x1="700" y1="300" x2="520" y2="510"/>
-
-                        <!-- lower left diagonal -->
-
-                        <line x1="500" y1="520" x2="270" y2="790"/>
-
-                        <!-- bottom horizontal -->
-
-                        <line x1="270" y1="790" x2="720" y2="790"/>
-
-                    </g>
-
-                </svg>
-
-                <svg class="zia-logo" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M500 0L600 100L500 200L400 100L500 0Z" fill="white"/>
-                    <path d="M178 322.222H822.444" stroke="white" stroke-width="120" stroke-linecap="square"/>
-                    <path d="M500.222 322.222V886.111" stroke="white" stroke-width="120" stroke-linecap="square"/>
-                    <path d="M798 370L204 848" stroke="white" stroke-width="120" stroke-linecap="square"/>
-                    <path d="M178 899H822.444" stroke="white" stroke-width="120" stroke-linecap="square"/>
-                </svg>
-                <svg class="zia-logo" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M500 30L600 140L500 250L400 140L500 30Z" fill="white"/>
-                    <path d="M178 372.222H822.444" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                    <path d="M500.222 372.222V936.111" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                    <path d="M801 415L200 906" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                    <path d="M178 949H822.444" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                </svg>
-
-                <svg class="zia-logo" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M501 0L626 140L501 280L376 140L501 0Z" fill="white"/>
-                    <path d="M236 444H766" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                    <path d="M501 444V934.565" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                    <path d="M745 489L256 907" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                    <path d="M235 952H765" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                </svg>
-                <svg class="zia-logo" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M501 0L626 140L501 280L376 140L501 0Z" fill="white"/>
-                    <path d="M236 444H766" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                    <path d="M501 444V934.565" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                    <path d="M745 489L256 907" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                    <path d="M235 952H765" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                </svg>
-                <svg class="zia-logo" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
-
-                    <path d="M501 0L601 140L501 280L401 140L501 0Z" fill="white"/>
-                    <path d="M236 444H766" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                    <path d="M501 444V934.565" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                    <path d="M745 489L256 907" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                    <path d="M235 952H765" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                </svg>
-                <svg class="zia-logo" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
-                    <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z" fill="white"/>
-                    <path d="M240.942 453H740" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                    <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                    <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="100"
-                          stroke-linecap="square"/>
-                    <path d="M240 931.343H739.058" stroke="white" stroke-width="100" stroke-linecap="square"/>
-                </svg>
             </div>
 
-
-            <div class="text">
-                {{--            Zia Lee--}}
-            </div>
         </div>
-        {{--    <div class="navbar"></div>--}}
-        <div class="auth"></div>
-    </nav>
 
-</header>
+
+    </div>
+
+
+</div>
+
+
+{{--<header style="z-index:9999" class="header w-full bg-black shadow dark:bg-black fixed top-0 left-0">--}}
+{{--    <nav>--}}
+{{--        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">--}}
+{{--            <div class="relative flex h-16 justify-between">--}}
+{{--                                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">--}}
+{{--                                        <button--}}
+{{--                                            class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 transition duration-150 ease-in-out hover:bg-gray-100 hover:text-gray-500 focus:bg-gray-100 focus:text-gray-500 focus:outline-none dark:hover:bg-gray-600 dark:hover:text-gray-400 dark:focus:bg-gray-600 dark:focus:text-gray-400">--}}
+{{--                                            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">--}}
+{{--                                                <path class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M4 6h16M4 12h16M4 18h16"></path>--}}
+{{--                                                <path class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M6 18L18 6M6 6l12 12"></path>--}}
+{{--                                            </svg>--}}
+{{--                                        </button>--}}
+{{--                                    </div>--}}
+{{--                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">--}}
+{{--                    <div class="flex flex-shrink-0 items-center"><a href="/">--}}
+{{--                            <svg class="zia-logo block h-8 w-auto " viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">--}}
+{{--                                <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z" fill="white"/>--}}
+{{--                                <path d="M240.942 453H740" stroke="white" stroke-width="100" stroke-linecap="square"/>--}}
+{{--                                <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+{{--                                <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="100"--}}
+{{--                                      stroke-linecap="square"/>--}}
+{{--                                <path d="M240 931.343H739.058" stroke="white" stroke-width="100" stroke-linecap="square"/>--}}
+{{--                            </svg>--}}
+
+{{--                        </a></div>--}}
+{{--                    <div class="nav flex">--}}
+{{--                        <a--}}
+{{--                            class="nav-item--}}
+{{--                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"--}}
+{{--                            href="/portfolio">Portfolio</a>--}}
+
+{{--                        <a--}}
+{{--                            class="nav-item--}}
+{{--                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "--}}
+{{--                            href="/blog">--}}
+{{--                            Blog</a>--}}
+{{--                        <a class="nav-item--}}
+{{--                            ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "--}}
+{{--                           href="/contact">Contact</a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="accounts--}}
+{{--                        absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">--}}
+
+{{--                    <div class="relative ml-3 flex items-center"><a--}}
+{{--                            class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"--}}
+{{--                            href="/login">Login</a>--}}
+{{--                        <div class="flex-shrink-0"><a--}}
+{{--                                class="relative inline-flex items-center rounded-md border border-transparent bg-blue-600 px-8 py-2 text-sm font-medium leading-5 text-white shadow-sm transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none focus:ring focus:ring-blue-400 active:bg-blue-700 dark:border dark:border-white dark:bg-white dark:text-gray-700 dark:hover:bg-transparent dark:hover:text-white"--}}
+{{--                                href="/join"><span>Join</span></a></div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+
+{{--    </nav>--}}
+{{--</header>--}}
+
 
 <!--
   - #MAIN
@@ -192,6 +148,7 @@
 
 
 <main>
+
 
     <!--
       - #SIDEBAR
