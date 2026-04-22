@@ -2,4 +2,45 @@ main {
     margin: 15px 12px;
     margin-bottom: 75px;
     min-width: 259px;
+
+}
+
+/*.header{*/
+/*    height: 64px;*/
+/*    background-color: black;*/
+/*    !*position: sticky;*!*/
+/*    !*display: flex;*!*/
+/*    !*align-items: center;*!*/
+/*    !*display: grid;*!*/
+/*    !*grid-template-columns: 1fr 5fr 1fr;*!*/
+/*}*/
+
+.header > .home-link{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+}
+.header > .home-link >.logo{
+    color: white;
+    height: 35px;
+    aspect-ratio: 1;
+    margin: 5px;
+}
+
+.header>.home-link> .logo >img {
+    height: 100%;
+    width: 100%;
+}
+
+.zia-logo{
+    height: 41px;
+    width: 41px;
+    margin-left: 20px;
+}
+
+.header > .home-link > .text{
+    font-weight: var(--fw-600);
+    margin-left: 20px;
 }
