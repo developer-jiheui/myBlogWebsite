@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zia Dev</title>
 
-    <link rel="icon" href="{{ asset('favicon.ico') }}?v=3" type="image/x-icon">
+    <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/png">
     <!--
       - Custom css and js from vite
     -->
@@ -20,12 +20,534 @@
 
 <body>
 
+<div style="z-index: 9999;" class="header w-full top-0 fixed bg-black">
+    <div class="header-box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full">
+        <div class="top-nav relative flex h-16 justify-between gap-5 items-center">
+            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex h-full flex-shrink-0 items-center">
+                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200"
+                         xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+                        <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"
+                              fill="white"/>
+                        <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"
+                              stroke-linecap="square"/>
+                        <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                    </svg>
+                    <a href="/">
+
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="nav-center flex-1">
+                <div class="flex gap-3 text-xs sm:text-sm">
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/portfolio">Portfolio</a>
+
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                        href="/blog">
+                        Blog</a>
+                    <a class="nav-item
+                            ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                       href="/contact">Contact</a>
+                </div>
+            </div>
+            <div class="nav-right flex-none absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+                <div class="relative ml-3 flex items-center"><a
+                        class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/login">Login</a>
+                    <div class="flex-shrink-0"><a
+                            class="relative inline-flex items-center rounded-md border border-transparent bg-blue-600 px-8 py-2 text-sm font-medium leading-5 text-white shadow-sm transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none focus:ring focus:ring-blue-400 active:bg-blue-700 dark:border dark:border-white dark:bg-white dark:text-gray-700 dark:hover:bg-transparent dark:hover:text-white"
+                            href="/join"><span>Join</span></a></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="header-box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full">
+        <div class="top-nav relative flex h-16 justify-between gap-5 items-center">
+            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex h-full flex-shrink-0 items-center">
+
+
+
+                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M501 0L626 140L501 280L376 140L501 0Z" fill="white"/>
+                        <path d="M236 444H766" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                        <path d="M501 444V934.565" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                        <path d="M745 489L256 907" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                        <path d="M235 952H765" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                    </svg>
+
+                    <a href="/">
+
+                    </a>
+                </div>
+            </div>
+
+            {{--            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">--}}
+            {{--                <div class="flex flex-shrink-0 items-center">--}}
+            {{--                    <a href="/">--}}
+            {{--                        <div class="flex m-2">--}}
+            {{--                            <svg class="zia-logo block h-8 w-auto " viewBox="0 0 1000 1000"--}}
+            {{--                                 xmlns="http://www.w3.org/2000/svg" aria-label="Logo">--}}
+            {{--                                <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"--}}
+            {{--                                      fill="white"/>--}}
+            {{--                                <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                                <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                                <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"--}}
+            {{--                                      stroke-linecap="square"/>--}}
+            {{--                                <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                            </svg>--}}
+            {{--                            <div class="text-3xl text-white font-extrabold bottom-0">ZIA LEE</div>--}}
+            {{--                        </div>--}}
+            {{--                    </a>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+
+            <div class="nav-center flex-1">
+                <div class="flex gap-3 text-xs sm:text-sm">
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/portfolio">Portfolio</a>
+
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                        href="/blog">
+                        Blog</a>
+                    <a class="nav-item
+                            ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                       href="/contact">Contact</a>
+                </div>
+            </div>
+            <div class="nav-right flex-none absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+                <div class="relative ml-3 flex items-center"><a
+                        class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/login">Login</a>
+                    <div class="flex-shrink-0"><a
+                            class="relative inline-flex items-center rounded-md border border-transparent bg-blue-600 px-8 py-2 text-sm font-medium leading-5 text-white shadow-sm transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none focus:ring focus:ring-blue-400 active:bg-blue-700 dark:border dark:border-white dark:bg-white dark:text-gray-700 dark:hover:bg-transparent dark:hover:text-white"
+                            href="/join"><span>Join</span></a></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="header-box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full">
+        <div class="top-nav relative flex h-16 justify-between gap-5 items-center">
+            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex h-full flex-shrink-0 items-center">
+
+                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M501 0L626 140L501 280L376 140L501 0Z" fill="white"/>
+                        <path d="M236 444H766" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                        <path d="M501 444V934.565" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M745 489L256 907" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                        <path d="M235 952H765" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                    </svg>
+
+                    <a href="/">
+
+                    </a>
+                </div>
+            </div>
+
+            {{--            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">--}}
+            {{--                <div class="flex flex-shrink-0 items-center">--}}
+            {{--                    <a href="/">--}}
+            {{--                        <div class="flex m-2">--}}
+            {{--                            <svg class="zia-logo block h-8 w-auto " viewBox="0 0 1000 1000"--}}
+            {{--                                 xmlns="http://www.w3.org/2000/svg" aria-label="Logo">--}}
+            {{--                                <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"--}}
+            {{--                                      fill="white"/>--}}
+            {{--                                <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                                <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                                <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"--}}
+            {{--                                      stroke-linecap="square"/>--}}
+            {{--                                <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                            </svg>--}}
+            {{--                            <div class="text-3xl text-white font-extrabold bottom-0">ZIA LEE</div>--}}
+            {{--                        </div>--}}
+            {{--                    </a>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+
+            <div class="nav-center flex-1">
+                <div class="flex gap-3 text-xs sm:text-sm">
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/portfolio">Portfolio</a>
+
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                        href="/blog">
+                        Blog</a>
+                    <a class="nav-item
+                            ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                       href="/contact">Contact</a>
+                </div>
+            </div>
+            <div class="nav-right flex-none absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+                <div class="relative ml-3 flex items-center"><a
+                        class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/login">Login</a>
+                    <div class="flex-shrink-0"><a
+                            class="relative inline-flex items-center rounded-md border border-transparent bg-blue-600 px-8 py-2 text-sm font-medium leading-5 text-white shadow-sm transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none focus:ring focus:ring-blue-400 active:bg-blue-700 dark:border dark:border-white dark:bg-white dark:text-gray-700 dark:hover:bg-transparent dark:hover:text-white"
+                            href="/join"><span>Join</span></a></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="header-box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full">
+        <div class="top-nav relative flex h-16 justify-between gap-5 items-center">
+            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex h-full flex-shrink-0 items-center">
+
+                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+
+                        <path d="M501 0L601 140L501 280L401 140L501 0Z" fill="white"/>
+                        <path d="M236 444H766" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M501 444V934.565" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M745 489L256 907" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M235 952H765" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                    </svg>
+
+                    <a href="/">
+
+                    </a>
+                </div>
+            </div>
+
+            {{--            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">--}}
+            {{--                <div class="flex flex-shrink-0 items-center">--}}
+            {{--                    <a href="/">--}}
+            {{--                        <div class="flex m-2">--}}
+            {{--                            <svg class="zia-logo block h-8 w-auto " viewBox="0 0 1000 1000"--}}
+            {{--                                 xmlns="http://www.w3.org/2000/svg" aria-label="Logo">--}}
+            {{--                                <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"--}}
+            {{--                                      fill="white"/>--}}
+            {{--                                <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                                <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                                <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"--}}
+            {{--                                      stroke-linecap="square"/>--}}
+            {{--                                <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                            </svg>--}}
+            {{--                            <div class="text-3xl text-white font-extrabold bottom-0">ZIA LEE</div>--}}
+            {{--                        </div>--}}
+            {{--                    </a>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+
+            <div class="nav-center flex-1">
+                <div class="flex gap-3 text-xs sm:text-sm">
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/portfolio">Portfolio</a>
+
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                        href="/blog">
+                        Blog</a>
+                    <a class="nav-item
+                            ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                       href="/contact">Contact</a>
+                </div>
+            </div>
+            <div class="nav-right flex-none absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+                <div class="relative ml-3 flex items-center"><a
+                        class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/login">Login</a>
+                    <div class="flex-shrink-0"><a
+                            class="relative inline-flex items-center rounded-md border border-transparent bg-blue-600 px-8 py-2 text-sm font-medium leading-5 text-white shadow-sm transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none focus:ring focus:ring-blue-400 active:bg-blue-700 dark:border dark:border-white dark:bg-white dark:text-gray-700 dark:hover:bg-transparent dark:hover:text-white"
+                            href="/join"><span>Join</span></a></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="header-box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full">
+        <div class="top-nav relative flex h-16 justify-between gap-5 items-center">
+            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex h-full flex-shrink-0 items-center">
+
+                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+                        <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z" fill="white"/>
+                        <path d="M240.942 453H740" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                        <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="100"
+                              stroke-linecap="square"/>
+                        <path d="M240 931.343H739.058" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                    </svg>
+                    <a href="/">
+
+                    </a>
+                </div>
+            </div>
+
+            {{--            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">--}}
+            {{--                <div class="flex flex-shrink-0 items-center">--}}
+            {{--                    <a href="/">--}}
+            {{--                        <div class="flex m-2">--}}
+            {{--                            <svg class="zia-logo block h-8 w-auto " viewBox="0 0 1000 1000"--}}
+            {{--                                 xmlns="http://www.w3.org/2000/svg" aria-label="Logo">--}}
+            {{--                                <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"--}}
+            {{--                                      fill="white"/>--}}
+            {{--                                <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                                <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                                <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"--}}
+            {{--                                      stroke-linecap="square"/>--}}
+            {{--                                <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                            </svg>--}}
+            {{--                            <div class="text-3xl text-white font-extrabold bottom-0">ZIA LEE</div>--}}
+            {{--                        </div>--}}
+            {{--                    </a>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+
+            <div class="nav-center flex-1">
+                <div class="flex gap-3 text-xs sm:text-sm">
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/portfolio">Portfolio</a>
+
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                        href="/blog">
+                        Blog</a>
+                    <a class="nav-item
+                            ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                       href="/contact">Contact</a>
+                </div>
+            </div>
+            <div class="nav-right flex-none absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+                <div class="relative ml-3 flex items-center"><a
+                        class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/login">Login</a>
+                    <div class="flex-shrink-0"><a
+                            class="relative inline-flex items-center rounded-md border border-transparent bg-blue-600 px-8 py-2 text-sm font-medium leading-5 text-white shadow-sm transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none focus:ring focus:ring-blue-400 active:bg-blue-700 dark:border dark:border-white dark:bg-white dark:text-gray-700 dark:hover:bg-transparent dark:hover:text-white"
+                            href="/join"><span>Join</span></a></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="header-box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full">
+        <div class="top-nav relative flex h-16 justify-between gap-5 items-center">
+            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex h-full flex-shrink-0 items-center">
+                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200"
+                         xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+                        <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"
+                              fill="white"/>
+                        <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"
+                              stroke-linecap="square"/>
+                        <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                    </svg>
+
+
+                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M501 0L626 140L501 280L376 140L501 0Z" fill="white"/>
+                        <path d="M236 444H766" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                        <path d="M501 444V934.565" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                        <path d="M745 489L256 907" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                        <path d="M235 952H765" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                    </svg>
+                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M501 0L626 140L501 280L376 140L501 0Z" fill="white"/>
+                        <path d="M236 444H766" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                        <path d="M501 444V934.565" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M745 489L256 907" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                        <path d="M235 952H765" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                    </svg>
+                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+
+                        <path d="M501 0L601 140L501 280L401 140L501 0Z" fill="white"/>
+                        <path d="M236 444H766" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M501 444V934.565" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M745 489L256 907" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M235 952H765" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                    </svg>
+                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+                        <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z" fill="white"/>
+                        <path d="M240.942 453H740" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                        <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="100"
+                              stroke-linecap="square"/>
+                        <path d="M240 931.343H739.058" stroke="white" stroke-width="100" stroke-linecap="square"/>
+                    </svg>
+                    <a href="/">
+
+                    </a>
+                </div>
+            </div>
+
+            {{--            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">--}}
+            {{--                <div class="flex flex-shrink-0 items-center">--}}
+            {{--                    <a href="/">--}}
+            {{--                        <div class="flex m-2">--}}
+            {{--                            <svg class="zia-logo block h-8 w-auto " viewBox="0 0 1000 1000"--}}
+            {{--                                 xmlns="http://www.w3.org/2000/svg" aria-label="Logo">--}}
+            {{--                                <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"--}}
+            {{--                                      fill="white"/>--}}
+            {{--                                <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                                <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                                <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"--}}
+            {{--                                      stroke-linecap="square"/>--}}
+            {{--                                <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+            {{--                            </svg>--}}
+            {{--                            <div class="text-3xl text-white font-extrabold bottom-0">ZIA LEE</div>--}}
+            {{--                        </div>--}}
+            {{--                    </a>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+
+            <div class="nav-center flex-1">
+                <div class="flex gap-3 text-xs sm:text-sm">
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/portfolio">Portfolio</a>
+
+                    <a
+                        class="nav-item
+                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                        href="/blog">
+                        Blog</a>
+                    <a class="nav-item
+                            ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
+                       href="/contact">Contact</a>
+                </div>
+            </div>
+            <div class="nav-right flex-none absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+                <div class="relative ml-3 flex items-center"><a
+                        class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"
+                        href="/login">Login</a>
+                    <div class="flex-shrink-0"><a
+                            class="relative inline-flex items-center rounded-md border border-transparent bg-blue-600 px-8 py-2 text-sm font-medium leading-5 text-white shadow-sm transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none focus:ring focus:ring-blue-400 active:bg-blue-700 dark:border dark:border-white dark:bg-white dark:text-gray-700 dark:hover:bg-transparent dark:hover:text-white"
+                            href="/join"><span>Join</span></a></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+{{--<header style="z-index:9999" class="header w-full bg-black shadow dark:bg-black fixed top-0 left-0">--}}
+{{--    <nav>--}}
+{{--        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">--}}
+{{--            <div class="relative flex h-16 justify-between">--}}
+{{--                                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">--}}
+{{--                                        <button--}}
+{{--                                            class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 transition duration-150 ease-in-out hover:bg-gray-100 hover:text-gray-500 focus:bg-gray-100 focus:text-gray-500 focus:outline-none dark:hover:bg-gray-600 dark:hover:text-gray-400 dark:focus:bg-gray-600 dark:focus:text-gray-400">--}}
+{{--                                            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">--}}
+{{--                                                <path class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M4 6h16M4 12h16M4 18h16"></path>--}}
+{{--                                                <path class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M6 18L18 6M6 6l12 12"></path>--}}
+{{--                                            </svg>--}}
+{{--                                        </button>--}}
+{{--                                    </div>--}}
+{{--                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">--}}
+{{--                    <div class="flex flex-shrink-0 items-center"><a href="/">--}}
+{{--                            <svg class="zia-logo block h-8 w-auto " viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">--}}
+{{--                                <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z" fill="white"/>--}}
+{{--                                <path d="M240.942 453H740" stroke="white" stroke-width="100" stroke-linecap="square"/>--}}
+{{--                                <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>--}}
+{{--                                <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="100"--}}
+{{--                                      stroke-linecap="square"/>--}}
+{{--                                <path d="M240 931.343H739.058" stroke="white" stroke-width="100" stroke-linecap="square"/>--}}
+{{--                            </svg>--}}
+
+{{--                        </a></div>--}}
+{{--                    <div class="nav flex">--}}
+{{--                        <a--}}
+{{--                            class="nav-item--}}
+{{--                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"--}}
+{{--                            href="/portfolio">Portfolio</a>--}}
+
+{{--                        <a--}}
+{{--                            class="nav-item--}}
+{{--                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "--}}
+{{--                            href="/blog">--}}
+{{--                            Blog</a>--}}
+{{--                        <a class="nav-item--}}
+{{--                            ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "--}}
+{{--                           href="/contact">Contact</a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="accounts--}}
+{{--                        absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">--}}
+
+{{--                    <div class="relative ml-3 flex items-center"><a--}}
+{{--                            class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"--}}
+{{--                            href="/login">Login</a>--}}
+{{--                        <div class="flex-shrink-0"><a--}}
+{{--                                class="relative inline-flex items-center rounded-md border border-transparent bg-blue-600 px-8 py-2 text-sm font-medium leading-5 text-white shadow-sm transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none focus:ring focus:ring-blue-400 active:bg-blue-700 dark:border dark:border-white dark:bg-white dark:text-gray-700 dark:hover:bg-transparent dark:hover:text-white"--}}
+{{--                                href="/join"><span>Join</span></a></div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+
+{{--    </nav>--}}
+{{--</header>--}}
+
+
 <!--
   - #MAIN
 -->
 
 
 <main>
+
 
     <!--
       - #SIDEBAR
@@ -117,9 +639,6 @@
     </aside>
 
 
-
-
-
     <!--
       - #main-content
     -->
@@ -155,9 +674,6 @@
         </nav>
 
 
-
-
-
         <!--
           - #ABOUT
         -->
@@ -170,15 +686,18 @@
 
             <section class="about-text">
                 <p>
-                    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+                    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and
+                    print media.
                     I enjoy
                     turning complex problems into simple, beautiful and intuitive designs.
                 </p>
 
                 <p>
-                    My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+                    My job is to build your website so that it is functional and user-friendly but at the same time
+                    attractive.
                     Moreover, I
-                    add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+                    add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to
+                    bring
                     across your
                     message and identity in the most creative way. I created web design for many famous brand companies.
                 </p>
@@ -279,16 +798,18 @@
 
                             <figure class="testimonials-avatar-box">
 
-                                <img src="{{asset('images/avatars/1.png')}}"  width="60" data-testimonials-avatar>
+                                <img src="{{asset('images/avatars/1.png')}}" width="60" data-testimonials-avatar>
                             </figure>
 
                             <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
 
                             <div class="testimonials-text" data-testimonials-text>
                                 <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    done. She has a
                                     lot of experience
-                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                    ullamcous cididt
                                     consectetur adipiscing
                                     elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                                 </p>
@@ -301,16 +822,18 @@
                         <div class="content-card" data-testimonials-item>
 
                             <figure class="testimonials-avatar-box">
-                                <img src="{{asset('images/avatars/2.png')}}"  width="60" data-testimonials-avatar>
+                                <img src="{{asset('images/avatars/2.png')}}" width="60" data-testimonials-avatar>
                             </figure>
 
                             <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
 
                             <div class="testimonials-text" data-testimonials-text>
                                 <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    done. She has a
                                     lot of experience
-                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                    ullamcous cididt
                                     consectetur adipiscing
                                     elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                                 </p>
@@ -323,16 +846,18 @@
                         <div class="content-card" data-testimonials-item>
 
                             <figure class="testimonials-avatar-box">
-                                <img src="{{asset('images/avatars/3.png')}}"  width="60" data-testimonials-avatar>
+                                <img src="{{asset('images/avatars/3.png')}}" width="60" data-testimonials-avatar>
                             </figure>
 
                             <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
 
                             <div class="testimonials-text" data-testimonials-text>
                                 <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    done. She has a
                                     lot of experience
-                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                    ullamcous cididt
                                     consectetur adipiscing
                                     elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                                 </p>
@@ -345,16 +870,18 @@
                         <div class="content-card" data-testimonials-item>
 
                             <figure class="testimonials-avatar-box">
-                                <img src="{{asset('images/avatars/4.png')}}"  width="60" data-testimonials-avatar>
+                                <img src="{{asset('images/avatars/4.png')}}" width="60" data-testimonials-avatar>
                             </figure>
 
                             <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
 
                             <div class="testimonials-text" data-testimonials-text>
                                 <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    done. She has a
                                     lot of experience
-                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                    ullamcous cididt
                                     consectetur adipiscing
                                     elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                                 </p>
@@ -384,7 +911,7 @@
 
                     <div class="modal-img-wrapper">
                         <figure class="modal-avatar-box">
-                            <img src="{{asset('images/avatars/1.png')}}"  width="80" data-modal-img>
+                            <img src="{{asset('images/avatars/1.png')}}" width="80" data-modal-img>
                         </figure>
 
                         <img src="{{asset('images/icon-quote.svg')}}" alt="quote icon">
@@ -398,9 +925,11 @@
 
                         <div data-modal-text>
                             <p>
-                                Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                Richard was hired to create a corporate identity. We were very pleased with the work
+                                done. She has a
                                 lot of experience
-                                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous
+                                cididt
                                 consectetur adipiscing
                                 elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                             </p>
@@ -462,7 +991,6 @@
             </section>
 
         </article>
-
 
 
         <!--
@@ -702,9 +1230,6 @@
         </article>
 
 
-
-
-
         <!--
           - #BLOG
         -->
@@ -795,7 +1320,8 @@
                                 <h3 class="h3 blog-item-title">Design digest #80</h3>
 
                                 <p class="blog-text">
-                                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam
+                                    corporis suscipit.
                                 </p>
 
                             </div>
@@ -823,7 +1349,8 @@
                                 <h3 class="h3 blog-item-title">UI interactions of the week</h3>
 
                                 <p class="blog-text">
-                                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco
+                                    laboris nisi.
                                 </p>
 
                             </div>
@@ -894,9 +1421,6 @@
         </article>
 
 
-
-
-
         <!--
           - #CONTACT
         -->
@@ -927,12 +1451,15 @@
                 <form action="#" class="form" data-form>
 
                     <div class="input-wrapper">
-                        <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                        <input type="text" name="fullname" class="form-input" placeholder="Full name" required
+                               data-form-input>
 
-                        <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+                        <input type="email" name="email" class="form-input" placeholder="Email address" required
+                               data-form-input>
                     </div>
 
-                    <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+                    <textarea name="message" class="form-input" placeholder="Your Message" required
+                              data-form-input></textarea>
 
                     <button class="form-btn" type="submit" disabled data-form-btn>
                         <ion-icon name="paper-plane"></ion-icon>
@@ -950,14 +1477,6 @@
 </main>
 
 
-
-
-
-
-
-
-
-
 <!--
   - ionicon link
 -->
@@ -967,3 +1486,198 @@
 </body>
 
 </html>
+
+
+{{--@extends('layouts.app')--}}
+{{--@section('content')--}}
+
+{{--    <article class="home" data-page="home">--}}
+
+{{--        <header>--}}
+{{--            <h2 class="h2 article-title">About me</h2>--}}
+{{--        </header>--}}
+
+{{--        <section class="about-text">--}}
+{{--            <p>--}}
+{{--                I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print--}}
+{{--                media.--}}
+{{--                I enjoy turning complex problems into simple, beautiful and intuitive designs.--}}
+{{--            </p>--}}
+
+{{--            <p>--}}
+{{--                My job is to build your website so that it is functional and user-friendly but at the same time--}}
+{{--                attractive.--}}
+{{--                Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use.--}}
+{{--                My aim is to bring across your message and identity in the most creative way. I created web design--}}
+{{--                for many famous brand companies.--}}
+{{--            </p>--}}
+{{--        </section>--}}
+
+{{--        <section class="service">--}}
+{{--            <h3 class="h3 service-title">What i'm doing</h3>--}}
+
+{{--            <ul class="service-list">--}}
+{{--                <li class="service-item">--}}
+{{--                    <div class="service-icon-box">--}}
+{{--                        <img src="{{ asset('images/icon-design.svg') }}" alt="design icon" width="40">--}}
+{{--                    </div>--}}
+
+{{--                    <div class="service-content-box">--}}
+{{--                        <h4 class="h4 service-item-title">Web design</h4>--}}
+{{--                        <p class="service-item-text">--}}
+{{--                            The most modern and high-quality design made at a professional level.--}}
+{{--                        </p>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
+
+{{--                <li class="service-item">--}}
+{{--                    <div class="service-icon-box">--}}
+{{--                        <img src="{{ asset('images/icon-dev.svg') }}" alt="development icon" width="40">--}}
+{{--                    </div>--}}
+
+{{--                    <div class="service-content-box">--}}
+{{--                        <h4 class="h4 service-item-title">Web development</h4>--}}
+{{--                        <p class="service-item-text">--}}
+{{--                            High-quality development of sites at the professional level.--}}
+{{--                        </p>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
+
+{{--                <li class="service-item">--}}
+{{--                    <div class="service-icon-box">--}}
+{{--                        <img src="{{ asset('images/icon-app.svg') }}" alt="app icon" width="40">--}}
+{{--                    </div>--}}
+
+{{--                    <div class="service-content-box">--}}
+{{--                        <h4 class="h4 service-item-title">Mobile apps</h4>--}}
+{{--                        <p class="service-item-text">--}}
+{{--                            Professional development of applications for iOS and Android.--}}
+{{--                        </p>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
+
+{{--                <li class="service-item">--}}
+{{--                    <div class="service-icon-box">--}}
+{{--                        <img src="{{ asset('images/icon-photo.svg') }}" alt="photo icon" width="40">--}}
+{{--                    </div>--}}
+
+{{--                    <div class="service-content-box">--}}
+{{--                        <h4 class="h4 service-item-title">Photography</h4>--}}
+{{--                        <p class="service-item-text">--}}
+{{--                            I make high-quality photos of any category at a professional level.--}}
+{{--                        </p>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
+{{--            </ul>--}}
+{{--        </section>--}}
+
+{{--        <section class="testimonials">--}}
+{{--            <h3 class="h3 testimonials-title">Testimonials</h3>--}}
+
+{{--            <ul class="testimonials-list has-scrollbar">--}}
+
+{{--                <li class="testimonials-item">--}}
+{{--                    <div class="content-card" data-testimonials-item>--}}
+{{--                        <figure class="testimonials-avatar-box">--}}
+{{--                            <img src="{{ asset('images/avatars/1.png') }}" width="60" data-testimonials-avatar>--}}
+{{--                        </figure>--}}
+
+{{--                        <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel Lewis</h4>--}}
+
+{{--                        <div class="testimonials-text" data-testimonials-text>--}}
+{{--                            <p>--}}
+{{--                                Richard was hired to create a corporate identity. We were very pleased with the work--}}
+{{--                                done.--}}
+{{--                                She has a lot of experience and is very concerned about the needs of client.--}}
+{{--                            </p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
+
+{{--                <li class="testimonials-item">--}}
+{{--                    <div class="content-card" data-testimonials-item>--}}
+{{--                        <figure class="testimonials-avatar-box">--}}
+{{--                            <img src="{{ asset('images/avatars/2.png') }}" width="60" data-testimonials-avatar>--}}
+{{--                        </figure>--}}
+
+{{--                        <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica Miller</h4>--}}
+
+{{--                        <div class="testimonials-text" data-testimonials-text>--}}
+{{--                            <p>--}}
+{{--                                Richard was hired to create a corporate identity. We were very pleased with the work--}}
+{{--                                done.--}}
+{{--                                She has a lot of experience and is very concerned about the needs of client.--}}
+{{--                            </p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
+
+{{--                <li class="testimonials-item">--}}
+{{--                    <div class="content-card" data-testimonials-item>--}}
+{{--                        <figure class="testimonials-avatar-box">--}}
+{{--                            <img src="{{ asset('images/avatars/3.png') }}" width="60" data-testimonials-avatar>--}}
+{{--                        </figure>--}}
+
+{{--                        <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily Evans</h4>--}}
+
+{{--                        <div class="testimonials-text" data-testimonials-text>--}}
+{{--                            <p>--}}
+{{--                                Richard was hired to create a corporate identity. We were very pleased with the work--}}
+{{--                                done.--}}
+{{--                                She has a lot of experience and is very concerned about the needs of client.--}}
+{{--                            </p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
+
+{{--                <li class="testimonials-item">--}}
+{{--                    <div class="content-card" data-testimonials-item>--}}
+{{--                        <figure class="testimonials-avatar-box">--}}
+{{--                            <img src="{{ asset('images/avatars/4.png') }}" width="60" data-testimonials-avatar>--}}
+{{--                        </figure>--}}
+
+{{--                        <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry William</h4>--}}
+
+{{--                        <div class="testimonials-text" data-testimonials-text>--}}
+{{--                            <p>--}}
+{{--                                Richard was hired to create a corporate identity. We were very pleased with the work--}}
+{{--                                done.--}}
+{{--                                She has a lot of experience and is very concerned about the needs of client.--}}
+{{--                            </p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
+
+{{--            </ul>--}}
+{{--        </section>--}}
+
+{{--        @include('components.modal.testimonial')--}}
+
+{{--        <section class="clients">--}}
+{{--            <h3 class="h3 clients-title">Clients</h3>--}}
+
+{{--            <ul class="clients-list has-scrollbar">--}}
+{{--                <li class="clients-item">--}}
+{{--                    <a href="#"><img src="{{ asset('images/logos/logo-1-color.png') }}" alt="client logo"></a>--}}
+{{--                </li>--}}
+{{--                <li class="clients-item">--}}
+{{--                    <a href="#"><img src="{{ asset('images/logos/logo-2-color.png') }}" alt="client logo"></a>--}}
+{{--                </li>--}}
+{{--                <li class="clients-item">--}}
+{{--                    <a href="#"><img src="{{ asset('images/logos/logo-3-color.png') }}" alt="client logo"></a>--}}
+{{--                </li>--}}
+{{--                <li class="clients-item">--}}
+{{--                    <a href="#"><img src="{{ asset('images/logos/logo-4-color.png') }}" alt="client logo"></a>--}}
+{{--                </li>--}}
+{{--                <li class="clients-item">--}}
+{{--                    <a href="#"><img src="{{ asset('images/logos/logo-5-color.png') }}" alt="client logo"></a>--}}
+{{--                </li>--}}
+{{--                <li class="clients-item">--}}
+{{--                    <a href="#"><img src="{{ asset('images/logos/logo-6-color.png') }}" alt="client logo"></a>--}}
+{{--                </li>--}}
+{{--            </ul>--}}
+{{--        </section>--}}
+
+{{--    </article>--}}
+
+{{--@

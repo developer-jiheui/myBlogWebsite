@@ -8,21 +8,27 @@ body{
     padding-top: 64px;
 }
 
-/*.header{*/
-/*    background-color: black;*/
-/*    width: 100%;*/
-/*    top: 0;*/
-/*    position: fixed;*/
-/*}*/
+.header{
+    background-color: var(--smoky-black);
+}
 
 .header-box{
     max-width: 1200px;
 
 }
-.nav-left{
-    height: 100%;
+
+
+
+.join-btn {
+    background-color: var(--primary);
+    color: var(--smoky-black);
+    cursor: pointer;
+    transition: background .3s ease;
+    align-self:center;
 }
 
-
+.join-btn:hover {
+    opacity: 80%;
+}
 
 
