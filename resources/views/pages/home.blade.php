@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,7 +15,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
@@ -28,12 +29,12 @@
                     <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200"
                          xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
                         <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"
-                              fill="white"/>
-                        <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                        <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                        <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"
+                              fill="#f9c537"/>
+                        <path d="M240.942 453H740" stroke="#f9c537" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M490.47 453V914.925" stroke="#f9c537" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M720.226 495.373L259.774 888.97" stroke="#f9c537" stroke-width="90"
                               stroke-linecap="square"/>
-                        <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        <path d="M240 931.343H739.058" stroke="#f9c537" stroke-width="90" stroke-linecap="square"/>
                     </svg>
                     <a href="/">
 
@@ -42,128 +43,25 @@
             </div>
             <div class="nav-center flex-1">
                 <div class="flex gap-3 text-xs sm:text-sm">
-                    <ul class="navbar-list">
-                        <li class="navbar-item">
-                            <a href="{{ route('portfolio.index') }}"
-                               class="navbar-link {{ request()->routeIs('portfolio.*') ? 'active' : '' }}">
-                                Portfolio
-                            </a>
-                        </li>
-
-                        <li class="navbar-item">
-                            <a href="{{ route('blog.index') }}" class="navbar-link {{ request()->routeIs('blog.*') ? 'active' : '' }}">
-                                Blog
-                            </a>
-                        </li>
-
-                        <li class="navbar-item">
-                            <a href="{{ route('contact') }}" class="navbar-link {{ request()->routeIs('contact') ? 'active' : '' }}">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="nav-right flex-none absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <div class="relative ml-3 flex items-center"><a
-                        class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"
-                        href="/login">Login</a>
-                    <div class="flex-shrink-0"><a
-                            class="relative inline-flex items-center rounded-md border border-transparent bg-blue-600 px-8 py-2 text-sm font-medium leading-5 text-white shadow-sm transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none focus:ring focus:ring-blue-400 active:bg-blue-700 dark:border dark:border-white dark:bg-white dark:text-gray-700 dark:hover:bg-transparent dark:hover:text-white"
-                            href="/join"><span>Join</span></a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full">
-        <div class="top-nav relative flex h-16 justify-between gap-5 items-center">
-            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">
-                <div class="flex h-full flex-shrink-0 items-center">
-                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200"
-                         xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
-                        <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"
-                              fill="white"/>
-                        <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                        <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                        <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"
-                              stroke-linecap="square"/>
-                        <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                    </svg>
-                    <a href="/">
-
-                    </a>
-                </div>
-            </div>
-            <div class="nav-center flex-1">
-                <div class="flex gap-3 text-xs sm:text-sm">
-                        <a
-                            class="nav-item
+                    <a
+                        class="nav-item
                                 ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-                            href="/portfolio">Portfolio</a>
+                        href="{{ route('portfolio.index') }}">Portfolio</a>
 
-                        <a
-                            class="nav-item
+                    <a
+                        class="nav-item
                                 ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
-                            href="/blog">
-                            Blog</a>
-                        <a class="nav-item
+                        href="{{ route('blog.index') }}">
+                        Blog</a>
+                    <a class="nav-item
                             ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
-                           href="/contact">Contact</a>
+                       href="{{ route('contact') }}">Contact</a>
 
                 </div>
             </div>
 
-            <div class="nav-right flex-none absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <div class="relative ml-3 flex items-center"><a
-                        class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"
-                        href="/login">Login</a>
-                    <div class="flex-shrink-0"><a
-                            class="relative inline-flex items-center rounded-md border border-transparent bg-blue-600 px-8 py-2 text-sm font-medium leading-5 text-white shadow-sm transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none focus:ring focus:ring-blue-400 active:bg-blue-700 dark:border dark:border-white dark:bg-white dark:text-gray-700 dark:hover:bg-transparent dark:hover:text-white"
-                            href="/join"><span>Join</span></a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full">
-        <div class="top-nav relative flex h-16 justify-between gap-5 items-center">
-            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">
-                <div class="flex h-full flex-shrink-0 items-center">
-                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200"
-                         xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
-                        <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"
-                              fill="white"/>
-                        <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                        <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                        <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"
-                              stroke-linecap="square"/>
-                        <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                    </svg>
-                    <a href="/">
-
-                    </a>
-                </div>
-            </div>
-            <div class="nav-center flex-1">
-                <div class="flex gap-3 text-xs sm:text-sm">
-                        <a
-                            class="nav-item
-                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-                            href="{{ route('portfolio.index') }}">Portfolio</a>
-
-                        <a
-                            class="nav-item
-                                ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
-                            href="{{ route('blog.index') }}">
-                            Blog</a>
-                        <a class="nav-item
-                            ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
-                           href="{{ route('contact') }}">Contact</a>
-
-                </div>
-            </div>
-
-            <div class="nav-right flex-none absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div
+                class="nav-right flex-none absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div class="relative ml-3 flex items-center"><a
                         class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"
                         href="/login">Login</a>
@@ -181,6 +79,56 @@
 
 <main>
 
+    <section
+        class="max-w-[1200px] w-full sm:px-20 relative flex mx-auto h-[350px] py-10 overflow-hidden justify-center sm:justify-start sm:items-end">
+        <div class="flex ml-2 w-3/5 flex-col gap-5 items-center sm:items-start ">
+            <div class="text-3xl  flex flex-col items-center sm:items-start sm:text-4xl font-bold"><p
+                    class="text-sm mb-2 font-normal text-white/50">place holder</p>
+                <h2>Hello World,</h2>
+                <div class="flex items-center">
+                    <div class="text-primary"><span class="">Full stack</span></div>
+                    <div class="w-[1px] h-7 md:h-8 ml-1 mb-[-4px] mr-2 bg-white animate-typewriter-cursor"></div>
+                    <h2>Developer</h2></div>
+                <h2>ZiA</h2></div>
+            <div class="flex gap-1"><a
+                    class="bg-primary text-primary-foreground px-3 py-1 rounded-md text-sm hover:opacity-80 transition-opacity"
+                    href="/about">show more</a>
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+        </div>
+        <div class="w-2/5 flex justify-center items-center h-full">
+            <img alt="me" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1"
+                 class=" w-[400px] h-[400px]  absolute bottom-[-35px] hidden sm:block"
+                 src="{{asset('images/my-avatar.png')}}">
+        </div>
+
+    </section>
+
+    <section
+        class="max-w-[1200px] sm:px-20 relative flex mx-auto h-[300px] py-10 overflow-hidden justify-center sm:justify-start sm:items-end">
+        <div class="flex flex-col gap-5 items-center sm:items-start">
+            <div class="text-3xl flex flex-col items-center sm:items-start sm:text-4xl font-bold"><p
+                    class="text-sm mb-2 font-normal text-white/50">gyuyeon.dev</p>
+                <h2>안녕하세요,</h2>
+                <div class="flex items-center">
+                    <div class="text-primary"><span class="">리액트</span></div>
+                    <div class="w-[1px] h-7 md:h-8 ml-1 mb-[-4px] mr-2 bg-white animate-typewriter-cursor"></div>
+                    <h2>개발자</h2></div>
+                <h2>이규연입니다.</h2></div>
+            <div class="flex gap-1"><a
+                    class="bg-primary text-primary-foreground px-3 py-1 rounded-md text-sm hover:opacity-80 transition-opacity"
+                    href="/about">About</a><a
+                    class="border-border border px-3 py-1 rounded-md text-sm hover:bg-border transition-colors"
+                    href="/profile">Contact</a></div>
+        </div>
+        <img alt="minimo" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1"
+             class="w-[400px] h-[400px] absolute bottom-[-150px] right-[0px] hidden sm:block"
+             srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fminimo.639c0e30.png&amp;w=1080&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fminimo.639c0e30.png&amp;w=2048&amp;q=75 2x"
+             style="color: transparent;"
+             src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fminimo.639c0e30.png&amp;w=2048&amp;q=75"></section>
 
     <!--
       - #SIDEBAR
@@ -329,10 +277,12 @@
                     My job is to build your website so that it is functional and user-friendly but at the same time
                     attractive.
                     Moreover, I
-                    add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to
+                    add personal touch to your product and make sure that is eye-catching and easy to use. My aim is
+                    to
                     bring
                     across your
-                    message and identity in the most creative way. I created web design for many famous brand companies.
+                    message and identity in the most creative way. I created web design for many famous brand
+                    companies.
                 </p>
             </section>
 
@@ -438,7 +388,8 @@
 
                             <div class="testimonials-text" data-testimonials-text>
                                 <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    Richard was hired to create a corporate identity. We were very pleased with the
+                                    work
                                     done. She has a
                                     lot of experience
                                     and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
@@ -462,7 +413,8 @@
 
                             <div class="testimonials-text" data-testimonials-text>
                                 <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    Richard was hired to create a corporate identity. We were very pleased with the
+                                    work
                                     done. She has a
                                     lot of experience
                                     and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
@@ -486,7 +438,8 @@
 
                             <div class="testimonials-text" data-testimonials-text>
                                 <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    Richard was hired to create a corporate identity. We were very pleased with the
+                                    work
                                     done. She has a
                                     lot of experience
                                     and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
@@ -510,7 +463,8 @@
 
                             <div class="testimonials-text" data-testimonials-text>
                                 <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    Richard was hired to create a corporate identity. We were very pleased with the
+                                    work
                                     done. She has a
                                     lot of experience
                                     and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
@@ -561,7 +515,8 @@
                                 Richard was hired to create a corporate identity. We were very pleased with the work
                                 done. She has a
                                 lot of experience
-                                and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous
+                                and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                ullamcous
                                 cididt
                                 consectetur adipiscing
                                 elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
@@ -881,7 +836,8 @@
                         <a href="#">
 
                             <figure class="blog-banner-box">
-                                <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                                <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022"
+                                     loading="lazy">
                             </figure>
 
                             <div class="blog-content">
@@ -909,7 +865,8 @@
                         <a href="#">
 
                             <figure class="blog-banner-box">
-                                <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                                <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer"
+                                     loading="lazy">
                             </figure>
 
                             <div class="blog-content">
@@ -966,7 +923,8 @@
                         <a href="#">
 
                             <figure class="blog-banner-box">
-                                <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                                <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week"
+                                     loading="lazy">
                             </figure>
 
                             <div class="blog-content">
@@ -982,7 +940,8 @@
                                 <h3 class="h3 blog-item-title">UI interactions of the week</h3>
 
                                 <p class="blog-text">
-                                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco
+                                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation
+                                    ullamco
                                     laboris nisi.
                                 </p>
 
@@ -995,7 +954,8 @@
                         <a href="#">
 
                             <figure class="blog-banner-box">
-                                <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                                <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing"
+                                     loading="lazy">
                             </figure>
 
                             <div class="blog-content">
@@ -1011,7 +971,8 @@
                                 <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
 
                                 <p class="blog-text">
-                                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua.
                                 </p>
 
                             </div>
@@ -1313,4 +1274,4 @@
 
 {{--    </article>--}}
 
-{{--@
+{{--@</>
