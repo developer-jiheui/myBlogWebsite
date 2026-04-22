@@ -48,13 +48,13 @@
     }
 
     .sidebar {
-        position: sticky;
-        top: 60px;
-        max-height: max-content;
-        height: 100%;
-        margin-bottom: 0;
-        padding-top: 60px;
-        z-index: 1;
+        /*position: sticky;*/
+        /*top: 60px;*/
+        /*max-height: max-content;*/
+        /*height: 100%;*/
+        /*margin-bottom: 0;*/
+        /*padding-top: 60px;*/
+        /*z-index: 1;*/
     }
 
     .sidebar-info {

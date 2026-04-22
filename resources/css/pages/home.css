@@ -1,4 +1,11 @@
-.about .article-title {
+.bio-type {
+    color: var(--primary);
+}
+
+.bio-text::after {
+}
+
+    .about .article-title {
     margin-bottom: 15px;
 }
 
