@@ -25,16 +25,16 @@
         <div class="top-nav relative flex h-16 justify-between gap-5 items-center">
             <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex h-full flex-shrink-0 items-center">
-                    <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200"
-                         xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
-                        <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"
-                              fill="white"/>
-                        <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                        <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                        <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"
-                              stroke-linecap="square"/>
-                        <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>
-                    </svg>
+                        <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1000"
+                             xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+                            <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"
+                                  fill="white"/>
+                            <path d="M240.942 453H740" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                            <path d="M490.47 453V914.925" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                            <path d="M720.226 495.373L259.774 888.97" stroke="white" stroke-width="90"
+                                  stroke-linecap="square"/>
+                            <path d="M240 931.343H739.058" stroke="white" stroke-width="90" stroke-linecap="square"/>
+                        </svg>
                     <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1000"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M500 0L600 100L500 200L400 100L500 0Z" fill="white"/>
@@ -76,8 +76,6 @@
                         <path d="M745 489L256 907" stroke="white" stroke-width="90" stroke-linecap="square"/>
                         <path d="M235 952H765" stroke="white" stroke-width="90" stroke-linecap="square"/>
                     </svg>
-
-                <a href="/">
                     <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
                         <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z" fill="white"/>
                         <path d="M240.942 453H740" stroke="white" stroke-width="100" stroke-linecap="square"/>
@@ -86,6 +84,7 @@
                               stroke-linecap="square"/>
                         <path d="M240 931.343H739.058" stroke="white" stroke-width="100" stroke-linecap="square"/>
                     </svg>
+                <a href="/">
 
                 </a>
                 </div>
