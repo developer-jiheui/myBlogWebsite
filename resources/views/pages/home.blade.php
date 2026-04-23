@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zia Dev</title>
 
-    <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/png">
+    <link rel="icon" href="{{ asset('images/logos/logo-y.png') }}" type="image/png">
     <!--
       - Custom css and js from vite
     -->
@@ -24,8 +24,22 @@
 <div style="z-index: 9999;" class="header w-full top-0 fixed">
     <div class="header-box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full">
         <div class="top-nav relative flex h-16 justify-between gap-5 items-center">
-            <div class="nav-left flex flex-none items-center justify-center sm:items-stretch sm:justify-start">
-                <div class="flex h-full flex-shrink-0 items-center">
+            <div class="nav-left absolute inset-y-0 left-0 flex items-center">
+                    <div class="reorder-box absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <button
+                            class="reorder-btn inline-flex items-center justify-center rounded-md p-2 text-gray-400 transition duration-150 ease-in-out hover:bg-gray-100 hover:text-gray-500 focus:bg-gray-100 focus:text-gray-500 focus:outline-none dark:hover:bg-gray-600 dark:hover:text-gray-400 dark:focus:bg-gray-600 dark:focus:text-gray-400">
+                            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                <path class="inline-flex" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                                <path class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+            </div>
+            <div class="nav-center flex flex-1 items-center justify-center sm:items-center sm:justify-start">
+                <div class="logo-box flex flex-shrink-0 items-center">
                     <svg class="zia-logo block h-12 w-auto m-2" viewBox="0 0 1000 1200"
                          xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
                         <path d="M490.471 0L608.173 131.827L490.471 263.653L372.769 131.827L490.471 0Z"
@@ -37,17 +51,13 @@
                         <path d="M240 931.343H739.058" stroke="#f9c537" stroke-width="90" stroke-linecap="square"/>
                     </svg>
                     <a href="/">
-
                     </a>
                 </div>
-            </div>
-            <div class="nav-center flex-1">
-                <div class="flex gap-3 text-xs sm:text-sm">
+                <div class="nav-page hidden sm:ml-6 sm:flex">
                     <a
                         class="nav-item
                                 ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
                         href="{{ route('portfolio.index') }}">Portfolio</a>
-
                     <a
                         class="nav-item
                                 ml-8 inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 transition duration-150 ease-in-out focus:outline-none text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 "
@@ -61,21 +71,19 @@
             </div>
 
             <div
-                class="nav-right flex-none absolute inset-y-0 right-5 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                class="nav-right absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div class="relative ml-3 flex items-center"><a
-                        class="mr-8 hidden items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"
+                        class="nav-login hidden sm mr-8 items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out hover:text-gray-700 focus:text-gray-700 focus:outline-none sm:block dark:text-gray-400 dark:hover:text-gray-200"
                         href="/login">Login</a>
                     <div class="flex-shrink-0"><a
-                            class="join-btn relative inline-flex items-center rounded-md border border-transparent  px-8 py-1.5 text-sm font-medium "
+                            class="join-btn relative inline-flex items-center rounded-md border border-transparent px-8 py-1.5 text-sm font-medium "
                             href="/join"><span>Join</span></a></div>
                 </div>
             </div>
         </div>
     </div>
 
-
 </div>
-
 
 <main>
 
@@ -99,8 +107,8 @@
                 </div>
 
 
-                </div>
             </div>
+        </div>
         </div>
         <div class="w-2/5 flex justify-center items-center h-full">
             <img alt="me" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1"
@@ -115,395 +123,394 @@
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+    <article class="m-5">
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info_more">
+                {{--            <header>--}}
+                {{--                <h2 class="h2 article-title">About me</h2>--}}
+                {{--            </header>--}}
 
+                <section class="about-text">
+                    <p>
+                        I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and
+                        print media.
+                        I enjoy
+                        turning complex problems into simple, beautiful and intuitive designs.
+                    </p>
 
-        <div class="sidebar-info_more">
-{{--            <header>--}}
-{{--                <h2 class="h2 article-title">About me</h2>--}}
-{{--            </header>--}}
+                    <p>
+                        My job is to build your website so that it is functional and user-friendly but at the same time
+                        attractive.
+                        Moreover, I
+                        add personal touch to your product and make sure that is eye-catching and easy to use. My aim is
+                        to
+                        bring
+                        across your
+                        message and identity in the most creative way. I created web design for many famous brand
+                        companies.
+                    </p>
+                </section>
 
-            <section class="about-text">
-                <p>
-                    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and
-                    print media.
-                    I enjoy
-                    turning complex problems into simple, beautiful and intuitive designs.
-                </p>
+                <div class="separator"></div>
 
-                <p>
-                    My job is to build your website so that it is functional and user-friendly but at the same time
-                    attractive.
-                    Moreover, I
-                    add personal touch to your product and make sure that is eye-catching and easy to use. My aim is
-                    to
-                    bring
-                    across your
-                    message and identity in the most creative way. I created web design for many famous brand
-                    companies.
-                </p>
-            </section>
+                <ul class="contacts-list">
 
-            <div class="separator"></div>
+                    <li class="contact-item">
 
-            <ul class="contacts-list">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
 
-                <li class="contact-item">
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
 
-                    <div class="icon-box">
-                        <ion-icon name="mail-outline"></ion-icon>
-                    </div>
+                            <a href="mailto:developer.jiheuilee@gmail.com" class="contact-link">developer.jiheuilee@gmail.com</a>
+                        </div>
 
-                    <div class="contact-info">
-                        <p class="contact-title">Email</p>
+                    </li>
 
-                        <a href="mailto:developer.jiheuilee@gmail.com" class="contact-link">developer.jiheuilee@gmail.com</a>
-                    </div>
+                    <li class="contact-item">
 
-                </li>
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
 
-                <li class="contact-item">
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
 
-                    <div class="icon-box">
-                        <ion-icon name="location-outline"></ion-icon>
-                    </div>
+                            <address>Vancouver, BC, Canada</address>
+                        </div>
 
-                    <div class="contact-info">
-                        <p class="contact-title">Location</p>
+                    </li>
 
-                        <address>Vancouver, BC, Canada</address>
-                    </div>
+                </ul>
 
-                </li>
+                <div class="separator"></div>
 
-            </ul>
+                <ul class="social-list">
 
-            <div class="separator"></div>
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/jiheuilee/" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
 
-            <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://github.com/developer-jiheui" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
 
-                <li class="social-item">
-                    <a href="https://www.linkedin.com/in/jiheuilee/" class="social-link">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
 
-                <li class="social-item">
-                    <a href="https://github.com/developer-jiheui" class="social-link">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                </li>
+            </div>
 
-                <li class="social-item">
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-
-    </aside>
+        </aside>
+    </article>
 
 
     <!--
       - #main-content
     -->
-        <article class="about  active" data-page="about">
+    <article class="about  active" data-page="about">
 
-            <!--
-              - service
-            -->
+        <!--
+          - service
+        -->
 
-            <section class="service">
+        <section class="service">
 
-                <h3 class="h3 service-title">What i'm doing</h3>
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-                <ul class="service-list">
+            <ul class="service-list">
 
-                    <li class="service-item">
+                <li class="service-item">
 
-                        <div class="service-icon-box">
-                            <img src="{{asset('images/icon-design.svg')}}" alt="design icon" width="40">
-                        </div>
-
-                        <div class="service-content-box">
-                            <h4 class="h4 service-item-title">Web design</h4>
-
-                            <p class="service-item-text">
-                                The most modern and high-quality design made at a professional level.
-                            </p>
-                        </div>
-
-                    </li>
-
-                    <li class="service-item">
-
-                        <div class="service-icon-box">
-                            <img src="{{asset('images/icon-dev.svg')}}" alt="design icon" width="40">
-                        </div>
-
-                        <div class="service-content-box">
-                            <h4 class="h4 service-item-title">Web development</h4>
-
-                            <p class="service-item-text">
-                                High-quality development of sites at the professional level.
-                            </p>
-                        </div>
-
-                    </li>
-
-                    <li class="service-item">
-
-                        <div class="service-icon-box">
-                            <img src="{{asset('images/icon-app.svg')}}" alt="design icon" width="40">
-                        </div>
-
-                        <div class="service-content-box">
-                            <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                            <p class="service-item-text">
-                                Professional development of applications for iOS and Android.
-                            </p>
-                        </div>
-
-                    </li>
-
-                    <li class="service-item">
-
-                        <div class="service-icon-box">
-                            <img src="{{asset('images/icon-photo.svg')}}" alt="design icon" width="40">
-                        </div>
-
-                        <div class="service-content-box">
-                            <h4 class="h4 service-item-title">Photography</h4>
-
-                            <p class="service-item-text">
-                                I make high-quality photos of any category at a professional level.
-                            </p>
-                        </div>
-
-                    </li>
-
-                </ul>
-
-            </section>
-
-
-            <!--
-              - testimonials
-            -->
-
-            <section class="testimonials">
-
-                <h3 class="h3 testimonials-title">Testimonials</h3>
-
-                <ul class="testimonials-list has-scrollbar">
-
-                    <li class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-
-                            <figure class="testimonials-avatar-box">
-
-                                <img src="{{asset('images/avatars/1.png')}}" width="60" data-testimonials-avatar>
-                            </figure>
-
-                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the
-                                    work
-                                    done. She has a
-                                    lot of experience
-                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
-                                    ullamcous cididt
-                                    consectetur adipiscing
-                                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-
-                            <figure class="testimonials-avatar-box">
-                                <img src="{{asset('images/avatars/2.png')}}" width="60" data-testimonials-avatar>
-                            </figure>
-
-                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the
-                                    work
-                                    done. She has a
-                                    lot of experience
-                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
-                                    ullamcous cididt
-                                    consectetur adipiscing
-                                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-
-                            <figure class="testimonials-avatar-box">
-                                <img src="{{asset('images/avatars/3.png')}}" width="60" data-testimonials-avatar>
-                            </figure>
-
-                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the
-                                    work
-                                    done. She has a
-                                    lot of experience
-                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
-                                    ullamcous cididt
-                                    consectetur adipiscing
-                                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-
-                            <figure class="testimonials-avatar-box">
-                                <img src="{{asset('images/avatars/4.png')}}" width="60" data-testimonials-avatar>
-                            </figure>
-
-                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Richard was hired to create a corporate identity. We were very pleased with the
-                                    work
-                                    done. She has a
-                                    lot of experience
-                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
-                                    ullamcous cididt
-                                    consectetur adipiscing
-                                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                </ul>
-
-            </section>
-
-
-            <!--
-              - testimonials modal
-            -->
-
-            <div class="modal-container" data-modal-container>
-
-                <div class="overlay" data-overlay></div>
-
-                <section class="testimonials-modal">
-
-                    <button class="modal-close-btn" data-modal-close-btn>
-                        <ion-icon name="close-outline"></ion-icon>
-                    </button>
-
-                    <div class="modal-img-wrapper">
-                        <figure class="modal-avatar-box">
-                            <img src="{{asset('images/avatars/1.png')}}" width="80" data-modal-img>
-                        </figure>
-
-                        <img src="{{asset('images/icon-quote.svg')}}" alt="quote icon">
+                    <div class="service-icon-box">
+                        <img src="{{asset('images/icon-design.svg')}}" alt="design icon" width="40">
                     </div>
 
-                    <div class="modal-content">
+                    <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Web design</h4>
 
-                        <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+                        <p class="service-item-text">
+                            The most modern and high-quality design made at a professional level.
+                        </p>
+                    </div>
 
-                        <time datetime="2021-06-14">14 June, 2021</time>
+                </li>
 
-                        <div data-modal-text>
+                <li class="service-item">
+
+                    <div class="service-icon-box">
+                        <img src="{{asset('images/icon-dev.svg')}}" alt="design icon" width="40">
+                    </div>
+
+                    <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Web development</h4>
+
+                        <p class="service-item-text">
+                            High-quality development of sites at the professional level.
+                        </p>
+                    </div>
+
+                </li>
+
+                <li class="service-item">
+
+                    <div class="service-icon-box">
+                        <img src="{{asset('images/icon-app.svg')}}" alt="design icon" width="40">
+                    </div>
+
+                    <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                        <p class="service-item-text">
+                            Professional development of applications for iOS and Android.
+                        </p>
+                    </div>
+
+                </li>
+
+                <li class="service-item">
+
+                    <div class="service-icon-box">
+                        <img src="{{asset('images/icon-photo.svg')}}" alt="design icon" width="40">
+                    </div>
+
+                    <div class="service-content-box">
+                        <h4 class="h4 service-item-title">Photography</h4>
+
+                        <p class="service-item-text">
+                            I make high-quality photos of any category at a professional level.
+                        </p>
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+
+                <li class="testimonials-item">
+                    <div class="content-card" data-testimonials-item>
+
+                        <figure class="testimonials-avatar-box">
+
+                            <img src="{{asset('images/avatars/1.png')}}" width="60" data-testimonials-avatar>
+                        </figure>
+
+                        <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                        <div class="testimonials-text" data-testimonials-text>
                             <p>
-                                Richard was hired to create a corporate identity. We were very pleased with the work
+                                Richard was hired to create a corporate identity. We were very pleased with the
+                                work
                                 done. She has a
                                 lot of experience
                                 and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
-                                ullamcous
-                                cididt
+                                ullamcous cididt
                                 consectetur adipiscing
                                 elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                             </p>
                         </div>
 
                     </div>
+                </li>
 
-                </section>
+                <li class="testimonials-item">
+                    <div class="content-card" data-testimonials-item>
 
-            </div>
+                        <figure class="testimonials-avatar-box">
+                            <img src="{{asset('images/avatars/2.png')}}" width="60" data-testimonials-avatar>
+                        </figure>
+
+                        <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                        <div class="testimonials-text" data-testimonials-text>
+                            <p>
+                                Richard was hired to create a corporate identity. We were very pleased with the
+                                work
+                                done. She has a
+                                lot of experience
+                                and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                ullamcous cididt
+                                consectetur adipiscing
+                                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="testimonials-item">
+                    <div class="content-card" data-testimonials-item>
+
+                        <figure class="testimonials-avatar-box">
+                            <img src="{{asset('images/avatars/3.png')}}" width="60" data-testimonials-avatar>
+                        </figure>
+
+                        <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                        <div class="testimonials-text" data-testimonials-text>
+                            <p>
+                                Richard was hired to create a corporate identity. We were very pleased with the
+                                work
+                                done. She has a
+                                lot of experience
+                                and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                ullamcous cididt
+                                consectetur adipiscing
+                                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="testimonials-item">
+                    <div class="content-card" data-testimonials-item>
+
+                        <figure class="testimonials-avatar-box">
+                            <img src="{{asset('images/avatars/4.png')}}" width="60" data-testimonials-avatar>
+                        </figure>
+
+                        <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                        <div class="testimonials-text" data-testimonials-text>
+                            <p>
+                                Richard was hired to create a corporate identity. We were very pleased with the
+                                work
+                                done. She has a
+                                lot of experience
+                                and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                ullamcous cididt
+                                consectetur adipiscing
+                                elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
 
 
-            <!--
-              - clients
-            -->
+        <!--
+          - testimonials modal
+        -->
 
-            <section class="clients">
+        <div class="modal-container" data-modal-container>
 
-                <h3 class="h3 clients-title">Clients</h3>
+            <div class="overlay" data-overlay></div>
 
-                <ul class="clients-list has-scrollbar">
+            <section class="testimonials-modal">
 
-                    <li class="clients-item">
-                        <a href="#">
-                            <img src="{{asset('images/logos/logo-1-color.png')}}" alt="client logo">
-                        </a>
-                    </li>
+                <button class="modal-close-btn" data-modal-close-btn>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
 
-                    <li class="clients-item">
-                        <a href="#">
-                            <img src="{{asset('images/logos/logo-2-color.png')}}" alt="client logo">
-                        </a>
-                    </li>
+                <div class="modal-img-wrapper">
+                    <figure class="modal-avatar-box">
+                        <img src="{{asset('images/avatars/1.png')}}" width="80" data-modal-img>
+                    </figure>
 
-                    <li class="clients-item">
-                        <a href="#">
-                            <img src="{{asset('images/logos/logo-3-color.png')}}" alt="client logo">
-                        </a>
-                    </li>
+                    <img src="{{asset('images/icon-quote.svg')}}" alt="quote icon">
+                </div>
 
-                    <li class="clients-item">
-                        <a href="#">
-                            <img src="{{asset('images/logos/logo-4-color.png')}}" alt="client logo">
-                        </a>
-                    </li>
-                    <li class="clients-item">
-                        <a href="#">
-                            <img src="{{asset('images/logos/logo-5-color.png')}}" alt="client logo">
-                        </a>
-                    </li>
-                    <li class="clients-item">
-                        <a href="#">
-                            <img src="{{asset('images/logos/logo-6-color.png')}}" alt="client logo">
-                        </a>
-                    </li>
+                <div class="modal-content">
 
-                </ul>
+                    <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                    <time datetime="2021-06-14">14 June, 2021</time>
+
+                    <div data-modal-text>
+                        <p>
+                            Richard was hired to create a corporate identity. We were very pleased with the work
+                            done. She has a
+                            lot of experience
+                            and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                            ullamcous
+                            cididt
+                            consectetur adipiscing
+                            elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                        </p>
+                    </div>
+
+                </div>
 
             </section>
 
-        </article>
+        </div>
 
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+            <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+
+                <li class="clients-item">
+                    <a href="#">
+                        <img src="{{asset('images/logos/logo-1-color.png')}}" alt="client logo">
+                    </a>
+                </li>
+
+                <li class="clients-item">
+                    <a href="#">
+                        <img src="{{asset('images/logos/logo-2-color.png')}}" alt="client logo">
+                    </a>
+                </li>
+
+                <li class="clients-item">
+                    <a href="#">
+                        <img src="{{asset('images/logos/logo-3-color.png')}}" alt="client logo">
+                    </a>
+                </li>
+
+                <li class="clients-item">
+                    <a href="#">
+                        <img src="{{asset('images/logos/logo-4-color.png')}}" alt="client logo">
+                    </a>
+                </li>
+                <li class="clients-item">
+                    <a href="#">
+                        <img src="{{asset('images/logos/logo-5-color.png')}}" alt="client logo">
+                    </a>
+                </li>
+                <li class="clients-item">
+                    <a href="#">
+                        <img src="{{asset('images/logos/logo-6-color.png')}}" alt="client logo">
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+
+    </article>
 
 
     </div>

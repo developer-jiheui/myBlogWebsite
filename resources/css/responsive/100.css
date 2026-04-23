@@ -1,4 +1,4 @@
-@media (min-width: 450px) {
+@media (min-width: 100px) {
     .clients-item {
         min-width: calc(33.33% - 10px);
     }

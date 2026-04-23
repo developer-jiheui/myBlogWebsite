@@ -269,4 +269,8 @@
     .form-btn ion-icon {
         font-size: 18px;
     }
+
+    .nav-page, .nav-login{
+        visibility:hidden;
+    }
 }

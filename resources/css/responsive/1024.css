@@ -62,4 +62,8 @@
     .blog-banner-box {
         height: 230px;
     }
+
+    .nav-page, .nav-login{
+        visibility: visible;
+    }
 }
