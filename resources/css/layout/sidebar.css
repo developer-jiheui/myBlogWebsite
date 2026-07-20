@@ -44,6 +44,41 @@
 }
 
 /**/
+.download-btn {
+    border-radius: 15px;
+    font-size: 13px;
+    background: var(--bg-gradient-yellow-1);
+    color: var(--border-gradient-onyx);
+    padding: 10px;
+    box-shadow: var(--shadow-2);
+    transition: var(--transition-1);
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.download-btn::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    background: var(--primary);
+    transition: var(--transition-1);
+    z-index: -1;
+}
+
+.download-btn:hover,
+.download-btn:focus {
+    background: var(--bg-gradient-primary-dark-hover);
+
+}
+
+.download-btn:hover::before,
+.download-btn:focus::before {
+    background: var(--bg-gradient-primary-grey);
+
+}
+
 
 .info_more-btn {
     /*position: absolute;*/
@@ -57,6 +92,193 @@
     box-shadow: var(--shadow-2);
     transition: var(--transition-1);
     z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info_more-btn::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    background: var(--bg-gradient-jet);
+    transition: var(--transition-1);
+    z-index: -1;
+}
+
+.info_more-btn:hover,
+.info_more-btn:focus {
+    background: var(--bg-gradient-yellow-1);
+}
+
+.info_more-btn:hover::before,
+.info_more-btn:focus::before {
+    background: var(--bg-gradient-yellow-2);
+}
+
+.info_more-btn span {
+    display: none;
+}
+
+.sidebar-info_more {
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-2);
+}
+
+.sidebar.active .sidebar-info_more {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contacts-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.contact-item {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-info {
+    max-width: calc(100% - 46px);
+    width: calc(100% - 46px);
+}
+
+.contact-title {
+    color: var(--light-gray-70);
+    font-size: var(--fs-8);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.contact-info :is(.contact-link, time, address) {
+    color: var(--white-2);
+    font-size: var(--fs-7);
+}
+
+.contact-info address {
+    font-style: normal;
+}
+
+.social-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+}
+
+.social-item .social-link {
+    color: var(--light-gray-70);
+    font-size: 18px;
+}
+
+.social-item .social-link:hover {
+    color: var(--light-gray);
+}
+.sidebar {
+    /*margin-bottom: 15px;*/
+    max-height: 5px;
+    overflow: hidden;
+    transition: var(--transition-2);
+}
+
+.sidebar.active {
+    max-height: 455px;
+}
+
+.sidebar-info {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar-box {
+    background: var(--bg-gradient-onyx);
+    border-radius: 20px;
+}
+
+.info-content .name {
+    color: var(--white-2);
+    font-size: var(--fs-3);
+    font-weight: var(--fw-500);
+    letter-spacing: -0.25px;
+    margin-bottom: 10px;
+}
+
+.info-content .title {
+    color: var(--white-1);
+    background: var(--onyx);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-300);
+    width: max-content;
+    padding: 3px 12px;
+    border-radius: 8px;
+}
+.show-btn-box{
+    position: relative;
+}
+
+/**/
+.download-btn {
+    border-radius: 15px;
+    font-size: 13px;
+    background: var(--bg-gradient-primary-low);
+    color: var(--border-gradient-onyx);
+    padding: 10px;
+    box-shadow: var(--shadow-2);
+    transition: var(--transition-1);
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.download-btn::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    background: var(--primary);
+    transition: var(--transition-1);
+    z-index: -1;
+}
+
+.download-btn:hover,
+.download-btn:focus {
+    background: var(--bg-gradient-yellow);
+
+}
+
+.download-btn:hover::before,
+.download-btn:focus::before {
+    background: var(--bg-gradient-p-dark);
+}
+
+
+.info_more-btn {
+    /*position: absolute;*/
+    /*top: -5px;*/
+    /*left: 0;*/
+    border-radius: 15px;
+    font-size: 13px;
+    color: var(--orange-yellow-crayola);
+    background: var(--border-gradient-onyx);
+    padding: 10px;
+    box-shadow: var(--shadow-2);
+    transition: var(--transition-1);
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .info_more-btn::before {

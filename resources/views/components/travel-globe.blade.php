@@ -1,5 +1,6 @@
 <div id="travel-globe" class="travel-globe-wrapper">
     <div class="travel-globe-stage"></div>
+    <p class="travel-globe-hint">Click and drag to rotate</p>
 </div>
 
 <style>
@@ -8,14 +9,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
         width: 100%;
         color: #fff;
     }
 
     .travel-globe-stage {
         width: 100%;
-        min-height: 30px;
+        min-height: 500px;
         display: flex;
         justify-content: center;
         align-items: center;

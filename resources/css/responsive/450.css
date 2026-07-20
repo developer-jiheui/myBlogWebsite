@@ -8,7 +8,7 @@
         height: auto;
     }
 
-    .nav-page, .nav-login{
+     .nav-login{
         visibility:hidden;
     }
 

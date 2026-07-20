@@ -2,10 +2,15 @@
     color: var(--primary);
 }
 
+.bio-text{
+    color: white;
+
+}
+
 .bio-text::after {
 }
 
-    .about .article-title {
+.about .article-title {
     margin-bottom: 15px;
 }
 
@@ -159,3 +164,6 @@
 .clients-item img:hover {
     filter: grayscale(0);
 }
+
+
+

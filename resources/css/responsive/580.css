@@ -75,7 +75,6 @@
 
     .info_more-btn span {
         display: block;
-        font-size: var(--fs-8);
     }
 
     .info_more-btn ion-icon {
@@ -270,7 +269,8 @@
         font-size: 18px;
     }
 
-    .nav-page, .nav-login{
+
+     .nav-login{
         visibility:hidden;
     }
 }

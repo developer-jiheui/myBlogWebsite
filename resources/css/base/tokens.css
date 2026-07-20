@@ -9,6 +9,8 @@
         hsla(240, 1%, 18%, 0.251) 0%,
         hsla(240, 2%, 11%, 0) 100%
     ), hsl(240, 2%, 13%);
+
+    --bg-gradient-yellow: linear-gradient(166deg,rgba(254, 240, 139, 1) 0%, rgba(150, 139, 53, 1) 30%, rgba(51, 40, 11, 1) 64%, rgba(18, 18, 18, 1) 100%);
     --bg-gradient-yellow-1: linear-gradient(
         to bottom right,
         hsl(45, 100%, 71%) 0%,
@@ -29,6 +31,55 @@
         hsl(45, 100%, 72%),
         hsl(35, 100%, 68%)
     );
+    --bg-gradient-p-dark: linear-gradient(135deg,rgba(156, 114, 0, 1) 0%, rgba(222, 169, 24, 0.95) 53%, rgba(249, 197, 55, 0.96) 100%);
+    --bg-gradient-p-dark-2: linear-gradient(322deg,rgba(255, 178, 25, 0.59) 0%, rgba(252, 189, 0, 0.65) 53%, rgba(249, 197, 55, 0.5) 100%);
+    --bg-gradient-p-dark-1: linear-gradient(322deg,rgba(255, 178, 25, 0.59) 0%, rgba(252, 189, 0, 0.65) 53%, rgba(249, 197, 55, 0.65) 100%);
+    --bg-gradient-primary-low:linear-gradient(153deg,rgba(179, 142, 41, 1) 0%, rgba(55, 43, 12, 1) 50%, rgba(51, 40, 11, 1) 64%, rgba(18, 18, 18, 1) 100%);
+    --bg-gradient-primary-grey:linear-gradient(322deg,rgba(181, 106, 0, 0.46) 0%, rgba(252, 189, 0, 0.8) 53%, rgba(249, 197, 55, 1) 100%);
+    --bg-gradient-primary-grey-1:linear-gradient(322deg,rgba(181, 106, 0, 0.77) 0%, rgba(252, 189, 0, 0.8) 54%, rgba(249, 197, 55, 1) 100%);
+    --bg-gradient-primary-grey-2:linear-gradient(322deg,rgba(202, 122, 9, 0.77) 0%, rgba(252, 189, 0, 1) 59%, rgba(249, 197, 55, 1) 100%);
+    --bg-gradient-primary: linear-gradient(322deg,rgba(202, 122, 9, 1) 0%, rgba(252, 189, 0, 1) 59%, rgba(249, 197, 55, 1) 100%);
+    --bg-gradient-primary-0: linear-gradient(135deg,rgba(202, 122, 9, 1) 0%, rgba(252, 189, 0, 1) 59%, rgba(249, 197, 55, 1) 100%);
+    --bg-gradient-primary-dark: linear-gradient(135deg,rgba(202, 122, 9, 1) 0%, rgba(252, 189, 0, 1) 50%, rgba(249, 197, 55, 1) 100%), hsl(240, 2%, 13%);
+
+    --bg-gradient-primary-1: linear-gradient(
+        to bottom right,
+        hsl(45, 100%, 76%) 0%,
+        hsl(38, 100%, 62%) 100%
+    );
+
+    --bg-gradient-primary-2: linear-gradient(
+        135deg,
+        hsla(45, 100%, 76%, 0.95) 0%,
+        hsla(38, 100%, 62%, 0.75) 55%,
+        hsla(35, 100%, 58%, 0.95) 100%
+    );
+
+    --bg-gradient-primary-soft: linear-gradient(
+
+        to bottom right,
+        hsla(45, 100%, 76%, 0.35) 0%,
+        hsla(38, 100%, 62%, 0.12) 100%
+    ), hsl(45, 80%, 58%);
+
+    --bg-gradient-primary-inner: linear-gradient(
+        to bottom right,
+        hsl(45, 100%, 72%) 0%,
+        hsl(40, 95%, 58%) 100%
+    );
+
+    --bg-gradient-primary-inner-hover: linear-gradient(
+
+        to bottom right,
+        hsl(46, 100%, 78%) 0%,
+        hsl(36, 100%, 64%) 100%
+
+    );
+    --bg-gradient-primary-dark-hover: linear-gradient(
+        to bottom right,
+        hsla(240, 1%, 18%, 0.25) 0%,
+        hsla(240, 2%, 11%, 0) 100%
+    ), hsl(240, 2%, 13%);
 
     --jet: hsl(0, 0%, 22%);
     --onyx: hsl(240, 1%, 17%);
@@ -49,7 +100,8 @@
     --primary-foreground: #252525;
     --card: #080808;
     --card-foreground: #ffffff;
-
+    --point-orange: #CA7A09;
+    --point-gold: #FCBD00;
     --ff-poppins: 'Poppins', sans-serif;
 
     --fs-1: 24px;
