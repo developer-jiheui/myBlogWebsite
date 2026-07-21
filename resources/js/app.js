@@ -160,3 +160,72 @@ for (let i = 0; i < formInputs.length; i++) {
 //
 //     });
 // }
+
+//Typewriter effect on homepage
+document.addEventListener("DOMContentLoaded", () => {
+
+    const typeElement = document.querySelector(".bio-type");
+
+    const texts = [
+
+        "Full Stack",
+
+        "Spring",
+
+        "Backend"
+
+    ];
+
+    let textIndex = 0;
+
+    let characterIndex = 0;
+
+    let isDeleting = false;
+
+    function typeWriter() {
+
+        const currentText = texts[textIndex];
+
+        if (isDeleting) {
+
+            characterIndex--;
+
+        } else {
+
+            characterIndex++;
+
+        }
+
+        typeElement.textContent = currentText.substring(0, characterIndex);
+
+        let delay = isDeleting ? 60 : 120;
+
+        // Finished typing the current text
+
+        if (!isDeleting && characterIndex === currentText.length) {
+
+            isDeleting = true;
+
+            delay = 1500;
+
+        }
+
+        // Finished deleting the current text
+
+        else if (isDeleting && characterIndex === 0) {
+
+            isDeleting = false;
+
+            textIndex = (textIndex + 1) % texts.length;
+
+            delay = 400;
+
+        }
+
+        setTimeout(typeWriter, delay);
+
+    }
+
+    typeWriter();
+
+});

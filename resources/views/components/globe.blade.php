@@ -1380,14 +1380,14 @@
                     })
             );
 
-        // setInterval(() => {
-        //     if (isHovering) return;
-        //
-        //     const currentRotate = projection.rotate();
-        //     const factor = dragSensitivity / projection.scale();
-        //     projection.rotate([currentRotate[0] - factor, currentRotate[1]]);
-        //     redraw();
-        // }, 200);
+        setInterval(() => {
+            if (isHovering) return;
+
+            const currentRotate = projection.rotate();
+            const factor = dragSensitivity / projection.scale();
+            projection.rotate([currentRotate[0] - factor, currentRotate[1]]);
+            redraw();
+        }, 200);
 
         function renderGlobe() {
 

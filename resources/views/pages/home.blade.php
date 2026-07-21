@@ -104,31 +104,39 @@
                 <div
                     class="h-4/5 text-3xl flex gap-1.5 flex-col items-center sm:items-start md:text-4xl lg:text-5xl font-bold justify-center">
                     {{--                    <p class="text-sm mb-2 font-normal text-white/50">place holder</p>--}}
-                    <div class="flex">
-                        <div class="w-11/12 flex justify-center items-center">
-                            <h2 class="bio-text">
-                                Hello World
-                            </h2>
-                        </div>
-                        <div class="aspect-square">
-                            @include('components.globe')
-                        </div>
+                    <div class="flex pb-10">
+                        <h2 class="bio-text">
+                            Hello World
+ 🤚                       </h2>
+
+{{--                        <div class="w-11/12 flex justify-center items-center">--}}
+{{--                        --}}
+{{--                        </div>--}}
+{{--                        <div class="aspect-square">--}}
+{{--                            @include('components.globe')--}}
+{{--                        </div>--}}
                     </div>
 
-                    <h2 class=" bio-text">I am ZiA,</h2>
+                    <h2 class=" bio-text pb-2">I am ZiA,</h2>
                     <div class="flex items-center">
                         <div class="text-primary"><span class="bio-type">Full stack</span></div>
                         <div class="w-[1px] h-7 md:h-8 ml-1 mb-[-4px] mr-2 bg-white animate-typewriter-cursor"></div>
                         <h2 class="bio-text">Developer</h2></div>
                 </div>
-                <div class="flex w-full justify-center items-end sm:items-start sm:justify-start gap-2">
-                    <div class="w-1/5 mt-5 sidebar-info">
+
+                <script>
+
+
+
+                </script>
+                <div class="flex w-full justify-center items-end sm:items-start sm:justify-start gap-2 mt-10">
+                    <div class="w-1/5  sidebar-info">
                         <button class="info_more-btn" data-sidebar-btn>
                             <ion-icon name="chevron-down"></ion-icon>
                             <span class="text-xs xl:text-base">Show More</span>
                         </button>
                     </div>
-                    <div class="w-1/7 mt-5 sidebar-info">
+                    <div class="w-1/7 sidebar-info">
                         <button class="download-btn" data-sidebar-btn>
                             <span class="text-xs xl:text-base">CV</span>
                         </button>
@@ -138,8 +146,8 @@
 
             <div class=" lg:w-2/5 flex justify-center items-center h-full sm:block hidden overflow-hidden">
                 <img alt="me" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1"
-                     class="w-80 md:w-95 lg:w-120 xl:w-130 aspect-square absolute
-                     top-[-0.1rem] right-[-1.5rem] "
+                     class=" w-80 md:w-95 lg:w-120 xl:w-130 aspect-square absolute
+                     top-[-0.5rem] right-[-2.5rem] "
                      src="{{asset('images/my-avatar.png')}}">
             </div>
         </div>
@@ -152,7 +160,9 @@
       - #SIDEBAR
     -->
 
-    <article class="m-1 sm:m-3 lg:m-4">
+{{--    <article class="m-1 sm:m-3 lg:m-4">--}}
+        <article >
+
         <aside class="sidebar" data-sidebar>
             <div class="sidebar-info_more">
                 <section class="about-text">
