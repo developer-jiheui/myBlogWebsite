@@ -251,11 +251,294 @@
 
     {{--SKILL    --}}
 
+{{--    <section class="bg-neutral-950" style="clip-path:polygon(0 0, 100% 0, 100% 90%, 0 100%)">--}}
+{{--        @include('components.globe-gl')--}}
+{{--    </section>--}}
+
     <section class="bg-neutral-950" style="clip-path:polygon(0 0, 100% 0, 100% 90%, 0 100%)">
-        @include('components.globe-gl')
+        <div class="max-w-[1100px] mx-auto p-10 pb-16">
+            <h3 class="text-3xl font-bold">Main Skills</h3><p class="text-sm text-white/50 mt-2">제가 가장 잘 다루는 기술들을 소개해드릴게요!</p><div class="flex gap-3 flex-col my-5"><div class="flex gap-2 w-full flex-col sm:flex-row sm:items-center"><p class="text-sm w-32">React</p><div class="w-full h-[5px] bg-neutral-800 rounded-full"><div class="h-[5px] bg-primary rounded-full" style="width:90%"></div></div></div><div class="flex gap-2 w-full flex-col sm:flex-row sm:items-center"><p class="text-sm w-32">Next.js</p><div class="w-full h-[5px] bg-neutral-800 rounded-full"><div class="h-[5px] bg-primary rounded-full" style="width:87%"></div></div></div><div class="flex gap-2 w-full flex-col sm:flex-row sm:items-center"><p class="text-sm w-32">Typescript</p><div class="w-full h-[5px] bg-neutral-800 rounded-full"><div class="h-[5px] bg-primary rounded-full" style="width:80%"></div></div></div><div class="flex gap-2 w-full flex-col sm:flex-row sm:items-center"><p class="text-sm w-32">Rust</p><div class="w-full h-[5px] bg-neutral-800 rounded-full"><div class="h-[5px] bg-primary rounded-full" style="width:71%"></div></div></div><div class="flex gap-2 w-full flex-col sm:flex-row sm:items-center"><p class="text-sm w-32">Springboot</p><div class="w-full h-[5px] bg-neutral-800 rounded-full"><div class="h-[5px] bg-primary rounded-full" style="width:52%"></div></div></div><div class="flex gap-2 w-full flex-col sm:flex-row sm:items-center"><p class="text-sm w-32">C#</p><div class="w-full h-[5px] bg-neutral-800 rounded-full"><div class="h-[5px] bg-primary rounded-full" style="width:48%"></div></div></div></div>
+        </div>
     </section>
 
+        <section class="bg-neutral-950" style="clip-path:polygon(0 0, 100% 0, 100% 90%, 0 100%)">
+            <div class="max-w-[1100px] mx-auto p-10 pb-16">
+                <h3 class="text-3xl font-bold">Main Skills</h3>
+            </div>
 
+            <article class="portfolio" data-page="portfolio">
+
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+
+                    <ul class="filter-list">
+
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Web design</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Applications</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Web development</button>
+                        </li>
+
+                    </ul>
+
+                    <div class="filter-select-box">
+
+                        <button class="filter-select" data-select>
+
+                            <div class="select-value" data-selecct-value>Select category</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+
+                        </button>
+
+                        <ul class="select-list">
+
+                            <li class="select-item">
+                                <button data-select-item>All</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Web design</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Applications</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Web development</button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <ul class="project-list">
+
+                        <li class="project-item  active" data-filter-item data-category="web development">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Finance</h3>
+
+                                <p class="project-category">Web development</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web development">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Orizon</h3>
+
+                                <p class="project-category">Web development</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web design">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Fundo</h3>
+
+                                <p class="project-category">Web design</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="applications">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Brawlhalla</h3>
+
+                                <p class="project-category">Applications</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web design">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">DSM.</h3>
+
+                                <p class="project-category">Web design</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web design">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">MetaSpark</h3>
+
+                                <p class="project-category">Web design</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web development">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Summary</h3>
+
+                                <p class="project-category">Web development</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="applications">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Task Manager</h3>
+
+                                <p class="project-category">Applications</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web development">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Arrival</h3>
+
+                                <p class="project-category">Web development</p>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </article>
+            <!--
+              - portfolios
+            -->
+
+            @if(isset($projects) && count($projects))
+
+                <section class="recent-works">
+                    <h3 class="h3 service-title">Recent works</h3>
+
+                    <div class="recent-scroll-wrap">
+
+                        <ul class="recent-list has-scrollbar" id="recent-list">
+                            @foreach ($projects as $p)
+                                <li class="recent-item">
+                                    <a href="{{ route('page.portfoliofull', ['key' => $p['slug'] ?: $p['id']]) }}"
+                                       class="recent-card">
+                                        <figure class="recent-thumb">
+                                            <img
+                                                src="{{ asset($p['cover'] ?? 'images/default-icon.svg') }}"
+                                                alt="{{  $p['name']}}"
+                                                loading="lazy"
+                                            >
+                                        </figure>
+
+                                        <div class="recent-body">
+                                            <h4 class="h5 recent-title">{{ $p['name'] }}</h4>
+                                            <p class="recent-desc">
+                                                {{ \Illuminate\Support\Str::limit(strip_tags($p['summary']), 80) }}
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            @endforeach
+                        </ul>
+
+
+                    </div>
+                </section>
+            @endif
+
+
+        </section>
 
 
     <section class="bg-neutral-950" style="clip-path:polygon(0 0, 100% 0, 100% 90%, 0 100%)">
